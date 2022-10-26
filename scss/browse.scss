@@ -1,0 +1,102 @@
+.hero.browse {
+    background-image:linear-gradient(rgba(167, 232, 189, .75) rgba(167, 232, 189, .75)), url(../images/recipe-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .recipe-container {
+        width: 80%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+        .try-recipes {
+            font-family: caveat-bold;
+            font-size: 25px;
+            margin-bottom: 52px;
+        }
+
+        .recipe-list {
+            width: 100%;
+            min-height: 576px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            .recipe-entry {
+                width: 524px;
+                height: 263px;
+                display: flex;
+
+                .recipe-image {
+                    width: 300px;
+                    height: 263px;
+                    
+                    img {
+                        border-radius: 24px;
+                    }
+                }
+
+                .recipe-text {
+                    width: 224px;
+                    height: 263px;
+                    border-radius: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+                    font-family: lato-regular;
+                    background-color: white;
+
+                    .recipe-name {
+                        height: 30px;
+                        border-bottom: solid 3px black;
+
+                        h2 {
+                            font-size: 15;
+                        }
+                    }
+                    
+                    .instructions {
+                        width: 140px;
+                        height: 65px;
+                        font-size: 10px;
+                    }
+
+                    .time {
+                        display: flex;
+                        gap: 17px;
+
+                        .clock {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        .done {
+                            font-size: 10px;
+                        }
+                    }
+
+                    .servings {
+                        display: flex;
+                        gap: 17px;
+
+                        .icon {
+                            width: 24px;
+                            height: 24px;
+                        }
+                        .amount {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
